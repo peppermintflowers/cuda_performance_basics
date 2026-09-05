@@ -41,7 +41,7 @@ __global__ void vector_add(const float *A, const float *B, float *C, int N)
 
 int main()
 {
-    const int N = 1003;
+    const int N = 10'000'000;
     const size_t bytes = N * sizeof(float);
 
     std::vector<float> A(N, 1.0f);
